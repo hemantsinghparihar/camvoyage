@@ -9,7 +9,7 @@ const Navbar = () => {
     <div className='  w-full  py-1'>
         <div className='in-nav  flex justify-between items-center  max-w-[1434px] max-h-[95px] mx-auto'>
             <div className="logo">
-                <Image src='/joined.png' width={135} height={36} alt='logo'/>
+                <Image src={'/Joined.png'} width={135} height={36} alt='logo'/>
 
 
             </div>
