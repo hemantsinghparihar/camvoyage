@@ -1,18 +1,18 @@
 import Image from "next/image";
-import heroBg from "/bgImage.png"
+// import heroBg from "/bgImage.png"
 import Navbar from "./components/Navbar";
-import hero2 from "/hero2.png"
-import heroShadow from "/heroShadow.png"
+// import hero2 from "/hero2.png"
+// import heroShadow from "/heroShadow.png"
 import Card from "./components/Card";
 import Partners from "./components/Partners";
 import Schedule from "./components/Schedule";
 
-import info from "/info.svg"
-import LineL from "/LineL.svg"
-import LineR from "/LineR.svg"
-import logo2 from "/Logo2.svg"
-import whats from "/whats.svg"
-import call from "/call.svg"
+// import info from "/info.svg"
+// import LineL from "/LineL.svg"
+// import LineR from "/LineR.svg"
+// import logo2 from "/Logo2.svg"
+// import whats from "/whats.svg"
+// import call from "/call.svg"
 import Footer from "./components/Footer";
 import SelectContainers from "./components/SelectContainers";
 import SelectContainers2 from "./components/SelectContainers2";
@@ -25,7 +25,7 @@ export default function Home() {
             <div className="hero-container w-[100%]   max-h-[955px] flex justify-center "
                 style={{
                     backgroundColor: "rgba(250, 250, 250, 0.4)",
-                    backgroundImage:`url(${heroBg.src})`,
+                    backgroundImage:`url(/bgImage.png)`,
                     backgroundRepeat:'no-repeat',
                     backgroundSize:'cover ',
                     backgroundBlendMode: "overlay", 
@@ -35,7 +35,7 @@ export default function Home() {
               <div className="black-bg min-w-full"
               style={{
                     backgroundColor: "rgba(250, 250, 250, 0.4)",
-                    backgroundImage:`url(${heroShadow.src})`,
+                    backgroundImage:`url(/heroShadow.png)`,
                     backgroundRepeat:'no-repeat',
                     backgroundSize:'contain ',
                     backgroundBlendMode: "overlay", 
@@ -393,7 +393,7 @@ export default function Home() {
                       <input type="text" placeholder="Enter ticket reference number" className="rounded-[20px]  min-w-[90%] outline-none px-2 "  />
 
                       <div className=" min-w-[10%] flex justify-center items-center">
-                        <Image src={info} width={24} height={24} alt="info"  />
+                        <Image src={'/info.svg'} width={24} height={24} alt="info"  />
                       </div>
                     </div>
 
@@ -531,19 +531,19 @@ export default function Home() {
                 <div className="py-4 ">
 
                   <div className="head flex  items-center justify-center gap-4">
-                    <span className=""><Image src={LineL} width={600} height={2} alt="left line" /></span>
+                    <span className=""><Image src={'/LineL.svg'} width={600} height={2} alt="left line" /></span>
                     <h2 className="text-[40px] ">Contact Us</h2>
-                    <span className=""><Image src={LineR} width={600} height={2} alt="right line" /></span>
+                    <span className=""><Image src={'/LineR.svg'} width={600} height={2} alt="right line" /></span>
                   </div>
 
                   <div className="contact-content max-w-[90%]  px-4 flex  justify-center py-4">
                     
                     <div className="left  flex flex-col items-center gap-2">
-                      <Image src={logo2} width={351} height={205} alt="logo" />
+                      <Image src={'/Logo2.svg'} width={351} height={205} alt="logo" />
 
                       <div className="socials flex justify-center gap-2 py-2 px-2 max-w-[80px] rounded-[10px] bg-[#FCECBC]">
-                        <Image src={whats} width={24} height={24} alt="whatsapp" />
-                        <Image src={call} width={24} height={24} alt="phone" />
+                        <Image src={'/whats.svg'} width={24} height={24} alt="whatsapp" />
+                        <Image src={'/call.svg'} width={24} height={24} alt="phone" />
 
                       </div>
                       <h5 className="text-[20px] text-black font-medium">+237 650 11 85 88</h5>

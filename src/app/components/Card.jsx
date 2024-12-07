@@ -1,8 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
-import partner2 from "/partner2.svg"
-import minibus from "/minibus.svg"
-import Line from "/Line.svg"
+// import partner2 from "/partner2.svg"
+// import minibus from "/minibus.svg"
+// import Line from "/Line.svg"
 
 const Card = () => {
   return (
@@ -10,7 +10,7 @@ const Card = () => {
           <div className="max-w-[425px] max-h-[560px] bg-white mx-2  rounded-xl shadow-lg px-4 py-2  space-y-4">
            
             <div className="flex items-center space-x-2 max-w-[242px]">
-                <Image src={partner2} width={68} height={68} alt='logo'/>
+                <Image src={'/partner2.svg'} width={68} height={68} alt='logo'/>
               
               <h2 className=" font-normal text-[24px] text-[#007BFF]">Finexs Voyage</h2>
             </div>
@@ -22,7 +22,7 @@ const Card = () => {
                         <div className="font-medium flex justify-between">
                             <span className="text-[16px] font-bold">Yaounde</span> 
                             <span className="mx-2">
-                                <Image src={minibus} width={19} height={8} alt='minibus'/>
+                                <Image src={'/minibus.svg'} width={19} height={8} alt='minibus'/>
                             </span> 
                             <span className="font-bold text-[16px]">Douala</span>
                         </div>
@@ -30,7 +30,7 @@ const Card = () => {
                         <div className='flex justify-between'>
                             <span className="text-[16px] font-bold"></span> 
                             <span className="mx-2">
-                            <Image src={Line} width={266} height={2}  alt='line'/>
+                            <Image src={'/Line.svg'} width={266} height={2}  alt='line'/>
                             </span> 
                             <span className="font-bold text-[16px]"></span>
                             
