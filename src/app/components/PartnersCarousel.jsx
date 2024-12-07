@@ -39,10 +39,10 @@ const PartnersCarousel = () => {
   };
 
   return (
-    <div className="px-4 my-6 py-4">
+    <div className="px-4 my-6 ">
       <Slider {...settings}>
         {cardData.map((card, index) => (
-          <div key={index} className="mx-2"> {/* Add spacing between cards */}
+          <div key={index} className="py-4"> {/* Add spacing between cards */}
             <PartnersCard card={card} />
           </div>
         ))}

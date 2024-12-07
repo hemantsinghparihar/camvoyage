@@ -31,8 +31,8 @@ const ScheduleCarousel = () => {
   };
 
   return (
-    <div className="max-w-[1300px] mx-auto px-4 py-8">
-      <Slider {...settings}>
+    <div className="max-w-[1400px]  mx-auto px-4 py-8">
+      <Slider {...settings} className=" ">
         <Card />
         <Card />
         <Card />

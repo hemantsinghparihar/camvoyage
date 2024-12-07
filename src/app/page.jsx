@@ -16,6 +16,7 @@ import Schedule from "./components/Schedule";
 import Footer from "./components/Footer";
 import SelectContainers from "./components/SelectContainers";
 import SelectContainers2 from "./components/SelectContainers2";
+import HeroForm from "./components/HeroForm";
 
 export default function Home() {
   return (
@@ -48,117 +49,11 @@ export default function Home() {
                     <h4 className="text-[20px] text-center font-semibold  text-white">WELCOME ONBOARD</h4>
                     <h1 className="text-[48px] text-center font-bold text-white leading-[32px]">What’s Your Destination?</h1>
 
-                    {/* the form  */}
-                    <div className="w-[625px]  p-6 rounded-lg shadow-lg">
-                      {/* First Row */}
-                      <div className="flex justify-between gap-4 mb-4">
-                        {/* From */}
-                        <div className="flex-1 flex items-center max-w-[300px] bg-[#ffffff84] px-2 rounded-[20px]">
-                          <p>From:</p>
-                          <select className="w-full p-2 bg-transparent  rounded  focus:outline-none">
-                            <option>Yaounde</option>
-                          </select>
-                        </div>
-
-                        {/* To */}
-                        <div className="flex-1 flex items-center max-w-[300px] bg-[#ffffff84] px-2 rounded-[20px]">
-                          <p>To:</p>
-                          
-                        <select className="w-full p-2 bg-transparent  rounded  focus:outline-none">
-                            <option>City</option>
-                          </select>
-                        </div>
-
-                      </div>
-
-                      {/* Second Row */}
-                      <div className="flex justify-between gap-4 mb-4">
-                        {/* Departure Date */}
-                        <div className="flex-1">
-                          
-                          <input
-                            type="date"
-                            className="w-full p-2 border border-gray-300 rounded focus:ring-2 focus:ring-blue-500 focus:outline-none"
-                          />
-                        </div>
-
-                        {/* Class */}
-                        <div className="flex-1 flex items-center max-w-[300px] bg-[#ffffff84] px-2 rounded-[20px]">
-                        <p>Trip Type:</p>
-                          
-                        <select className="w-full p-2 bg-transparent  rounded  focus:outline-none">
-                            <option>Regular</option>
-                          </select>
-                        </div>
-
-                      
-                      </div>
-
-                      {/* Third Row */}
-
-                      <div className="flex justify-between gap-4 mb-4">
-                        {/* Trip Type */}
-
-                        <div className="flex-1 flex items-center max-w-[300px] bg-[#ffffff84] px-2 rounded-[20px]">
-                        <p>To:</p>
-                          
-                        <select className="w-full p-2 bg-transparent  rounded  focus:outline-none">
-                            <option>One Way</option>
-                          </select>
-                        </div>
-
-                        {/* Return Date */}
-                        <div className="flex-1">
-                          
-                          <input
-                            type="date"
-                            disabled
-                            className="w-full p-2 border border-gray-300 rounded bg-gray-100 cursor-not-allowed focus:outline-none"
-                          />
-                        </div>
-                      </div>
-
-                        {/* Fourth Row */}
-                        <div className="flex justify-between gap-4 mb-4">
-                          {/* Number of Seats */}
-                          <div className="flex-1 flex items-center  bg-[#ffffff84] px-2 rounded-[20px]">
-                           
-                          <select className="w-full p-2 bg-transparent  rounded  focus:outline-none">
-                              <option>1</option>
-                            </select>
-                          </div>
-                        </div>
-
-                        {/* Fifth Row */}
-                        <div className="flex justify-between gap-4 mb-4">
-                          {/* Preferred Time */}
-
-                          <div className="flex-1 flex items-center max-w-[300px] bg-[#ffffff84] px-2 rounded-[20px]">
-                                                     
-                          <select className="w-full p-2 bg-transparent  rounded  focus:outline-none">
-                              <option>Preferred time</option>
-                          </select>
-                        </div>
-                          {/* Available Agencies */}
-                          <div className="flex-1 flex items-center max-w-[300px] bg-[#ffffff84] px-2 rounded-[20px]">
-                        
-                          
-                          <select className="w-full p-2 bg-transparent  rounded  focus:outline-none">
-                              <option>Available agencies</option>
-                            </select>
-                        </div>
-                        </div>
-
-                        {/* Button */}
-                        <button className="mt-4 w-full py-3 bg-blue-500 text-white font-bold rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                          Book Your Trip
-                        </button>
-                      </div>
-
+                    {/* the form===========  */}
+                   
+                    <HeroForm/>
 
                     
-
-
                   </div>
                 </div>
               </div>
@@ -412,17 +307,17 @@ export default function Home() {
 
 
               <section className="faq-section py-10 px-4">
-               <div className=" flex flex-col gap-2">
+               <div className=" flex flex-col gap-4">
                     <h1 className="text-[40px] font-medium text-center">FAQ & Support</h1>
 
                     <p className="text-[20px] font-light max-w-[1049px] mx-auto text-center "> 
                     Here, you can find the assistance you need to make your travel experience seamless. Whether you have questions about bookings, need help with ticket management, or require support with any other issues, we’re here to help. Browse through our resources, or reach out to our dedicated support team for personalized assistance. Your journey is important to us, and we’re committed to providing you with the best service possible.
                     </p>
 
-                    <div className="ques-container flex">
+                    <div className="ques-container flex gap-4" >
                       
 
-                      <div className=" flex-1  flex flex-col gap-2">
+                      <div className=" flex-1  flex flex-col gap-4 ">
                         <div className="flex">
                             <div className="left text-[24px] font-medium text-[#007BFF]">
                               01
@@ -455,7 +350,7 @@ export default function Home() {
 
                       </div>
 
-                      <div className=" flex-1  flex flex-col gap-2">
+                      <div className=" flex-1  flex flex-col gap-4">
                         <div className="flex">
                             <div className="left text-[24px] font-medium text-[#007BFF]">
                               01
@@ -488,7 +383,7 @@ export default function Home() {
 
                       </div>
 
-                      <div className=" flex-1  flex flex-col gap-2">
+                      <div className=" flex-1  flex flex-col gap-4">
                         <div className="flex">
                             <div className="left text-[24px] font-medium text-[#007BFF]">
                               01

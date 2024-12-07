@@ -5,9 +5,11 @@ import Image from 'next/image';
 
 const PartnersCard = ({ card }) => {
   return (
-    <div className="min-w-[372px] min-h-[103px] rounded-[20px] border shadow-md flex items-center justify-center">
+    <div className="min-w-[372px] min-h-[103px] rounded-[20px]   flex items-center justify-center   mx-2 " 
+    style={{ boxShadow: 'rgba(0, 0, 0, 0.15) 0px 5px 15px 0px' }}
+    >
       {/* Apply a slight shadow */}
-      <div className="flex justify-between gap-6 items-center p-4">
+      <div className="flex justify-between gap-6 items-center  px-4 ">
         <div>
           <Image
             src={card.cardImage}
