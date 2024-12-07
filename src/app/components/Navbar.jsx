@@ -1,8 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
-import logo from "../../../public/joined.png"
+import logo from "/public/joined.png"
 import Image from 'next/image'
-import trip from "../../../public/trip.png"
+import trip from "/public/trip.png"
 
 const Navbar = () => {
   return (
