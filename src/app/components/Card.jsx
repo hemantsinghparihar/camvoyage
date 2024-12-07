@@ -1,8 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
-import partner2 from "/public/partner2.svg"
-import minibus from "/public/minibus.svg"
-import Line from "/public/Line.svg"
+import partner2 from "/partner2.svg"
+import minibus from "/minibus.svg"
+import Line from "/Line.svg"
 
 const Card = () => {
   return (
