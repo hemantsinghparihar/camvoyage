@@ -46,8 +46,8 @@ export default function Home() {
 
                 <div className="hero-content   w-full flex  justify-center ">
                   <div className="max-w-[625px]  flex flex-col gap-4">
-                    <h4 className="text-[20px] text-center font-semibold  text-white">WELCOME ONBOARD</h4>
-                    <h1 className="text-[48px] text-center font-bold text-white leading-[32px]">What’s Your Destination?</h1>
+                    <h4 className="text-[20px] text-center font-semibold  text-white opacity-70">WELCOME ONBOARD</h4>
+                    <h1 className="text-[48px] text-center font-bold text-white leading-[32px] ">What’s Your Destination?</h1>
 
                     {/* the form===========  */}
                    
@@ -183,8 +183,8 @@ export default function Home() {
                     <div className="grid grid-cols-4 gap-4 max-w-[844px]  mx-auto  py-2">
 
                       <div className="  text-[20px] font-light">
-                        <h3 className="text-center text-[24px] font-normal"> .</h3>
-                        <label className='flex  gap-2 rounded-[20px] border border-black py-1 px-4'>
+                        <h3 className=" text-[24px] font-normal"> .</h3>
+                        <label className='flex  items-center gap-2 rounded-[20px] border border-black py-1 px-4 min-h-[52px]'>
                         <input
                           type="radio"
                           name="time"
@@ -199,8 +199,8 @@ export default function Home() {
                       
 
                       <div className="  text-[20px] font-light">
-                        <h3 className="text-center text-[24px] font-normal">Morning</h3>
-                        <label className='flex  gap-2 rounded-[20px] border border-black py-1 px-4'>
+                        <h3 className=" text-[24px] font-normal">Morning</h3>
+                        <label className='flex  items-center  gap-2 rounded-[20px] border border-black py-1 px-4 min-h-[52px]'>
                         <input
                           type="radio"
                           name="time"
@@ -214,8 +214,8 @@ export default function Home() {
                       </div>
 
                       <div className="  text-[20px] font-light">
-                        <h3 className="text-center text-[24px] font-normal">Afternoon</h3>
-                        <label className='flex  gap-2 rounded-[20px] border border-black py-1 px-4'>
+                        <h3 className=" text-[24px] font-normal">Afternoon</h3>
+                        <label className='flex  items-center gap-2 rounded-[20px] border border-black py-1 px-4 min-h-[52px]'>
                         <input
                           type="radio"
                           name="time"
@@ -229,8 +229,8 @@ export default function Home() {
                       </div>
 
                       <div className="  text-[20px] font-light">
-                        <h3 className="text-center text-[24px] font-normal">Night</h3>
-                        <label className='flex  gap-2 rounded-[20px] border border-black py-1 px-4'>
+                        <h3 className=" text-[24px] font-normal">Night</h3>
+                        <label className='flex  items-center gap-2 rounded-[20px] border border-black py-1 px-4 min-h-[52px]'>
                         <input
                           type="radio"
                           name="time"
@@ -282,7 +282,7 @@ export default function Home() {
                     </label>
                   </div>
 
-                  <div className="max-w-[625px] ">
+                  <div className="w-full px-8 text-center  mx-auto ">
                     <div className=" bg-white rounded-[20px] flex min-h-[60px] px-2
                      ">
                       <input type="text" placeholder="Enter ticket reference number" className="rounded-[20px]  min-w-[90%] outline-none px-2 "  />

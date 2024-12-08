@@ -8,19 +8,26 @@ const SelectContainers = () => {
   const options = ["All", "Regular", "V.I.P", "V.V.I.P"];
 
   return (
-    <div className="select-card-container flex max-w-[692px] gap-6 justify-between py-4 px-2 mx-auto  rounded-[10px] ">
+    <div className="select-card-container flex max-w-[692px] gap-6 justify-between  px-2 mx-auto  rounded-[10px] min-h-[71px] ">
     {options.map((option) => (
       <div
         key={option}
         onClick={() => setActiveOption(option)}
-        className={`text-[20px] font-normal mx-auto rounded-[20px] py-[10px] px-[40px] cursor-pointer ${
+        className={`text-[20px]
+           font-normal 
+           mx-auto
+            rounded-[20px] 
+            py-[10px] px-[40px] cursor-pointer
+            min-h-full 
+            flex items-center
+            ${
           activeOption === option
             ? "bg-[#FFC107] text-black"
             : "border border-black text-gray-600"
         }`}
       >
         {option === "All" ? (
-          <span>
+          <span className=" flex justify-between min-w-[80px] ">
             {option} <span>/</span>
           </span>
         ) : (
