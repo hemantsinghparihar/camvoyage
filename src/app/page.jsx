@@ -20,9 +20,9 @@ import HeroForm from "./components/HeroForm";
 
 export default function Home() {
   return (
-    <div className="w-screen border border-black">
-      <div className="  mx-auto border border-black">
-        <section className="flex justify-center border border-black">
+    <div className="w-screen ">
+      <div className="  mx-auto  ">
+        <section className="flex justify-center ">
             <div className="hero-container w-[100%]   max-h-[955px] flex justify-center "
                 style={{
                     backgroundColor: "rgba(250, 250, 250, 0.4)",

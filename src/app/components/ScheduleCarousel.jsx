@@ -10,18 +10,20 @@ const ScheduleCarousel = () => {
   const CustomPrevArrow = ({ onClick }) => (
     <button
       onClick={onClick}
-      className="absolute left-1/2 -translate-x-[60px] bottom-[-40px] z-10 bg-white rounded-full p-2 shadow-lg hover:bg-gray-200"
+      className="absolute left-1/2 -translate-x-[60px] bottom-[-60px] z-10 bg-white rounded-[10px] p-2 shadow-lg hover:bg-gray-200 h-[50px] w-[67px] "
     >
-      ◀
+      <span className="">◀</span>
+      
     </button>
   );
 
   const CustomNextArrow = ({ onClick }) => (
     <button
       onClick={onClick}
-      className="absolute left-1/2 translate-x-[60px] bottom-[-40px] z-10 bg-white rounded-full p-2 shadow-lg hover:bg-gray-200"
+      className="absolute left-1/2 translate-x-[60px] bottom-[-60px] z-10 bg-white p-2 shadow-lg hover:bg-gray-200 h-[50px] w-[67px] rounded-[10px] "
     >
-      ▶
+      <span>▶</span>
+      
     </button>
   );
 
@@ -54,7 +56,7 @@ const ScheduleCarousel = () => {
   };
 
   return (
-    <div className="max-w-[1400px] mx-auto px-4 py-8 relative">
+    <div className="max-w-[1400px] mx-auto px-4 pt-10 pb-12 relative ">
       <Slider {...settings} className="">
         <Card />
         <Card />
