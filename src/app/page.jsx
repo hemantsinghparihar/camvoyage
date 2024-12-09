@@ -20,7 +20,7 @@ import HeroForm from "./components/HeroForm";
 
 export default function Home() {
   return (
-    <div className="w-screen  overflow-x-hidden">
+    <div className="max-w-screen  overflow-x-hidden">
       <div className="  mx-auto  ">
         <section className="flex justify-center ">
             <div className="hero-container w-[100%]   max-h-[955px] flex justify-center "
@@ -433,7 +433,7 @@ export default function Home() {
 
                   <div className="contact-content max-w-[90%]  px-4 flex  justify-center py-4  ">
                     
-                    <div className="left  flex flex-col items-center gap-2 ">
+                    <div className="left  flex flex-col items-center gap-2 border border-black">
                       <Image src={'/Logo2.svg'} width={351} height={205} alt="logo" />
 
                       <div className="socials flex justify-center gap-2 py-2 px-2 max-w-[80px] rounded-[10px] bg-[#FCECBC]">
@@ -446,7 +446,7 @@ export default function Home() {
 
                     </div>
                    
-                    <div className="right  flex flex-col gap-4 items-center pt-4">
+                    <div className="right  flex flex-col gap-4 items-center pt-4 border border-black">
                       <div className="min-w-[625px] px-2 flex flex-col gap-4">
                         <div className="row flex w-full gap-2">
                           <div className="First flex-1"> 
