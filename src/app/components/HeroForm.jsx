@@ -9,18 +9,18 @@ const HeroForm = () => {
     <div className="flex justify-between gap-4 mb-4 ">
       {/* From */}
         <div className="flex-1 flex items-center min-h-[70px] max-w-[300px] bg-[#ffffff84] px-2 rounded-[20px]">
-            <p className='font-medium'>From:</p>
+            <p className='font-[400] text-[20px]'>From:</p>
             <select className="w-full p-2 bg-transparent  rounded  focus:outline-none">
-            <option className='font-light text-[#333333]'> Yaounde</option>
+            <option className='font-light text-[#333333] text-[20px]'> Yaounde</option>
             </select>
         </div>
 
         {/* To */}
         <div className="flex-1 min-h-[70px] flex items-center max-w-[300px] bg-[#ffffff84] px-2 rounded-[20px]">
-            <p>To:</p>
+            <p className='font-[400] text-[20px]'>To:</p>
             
         <select className="w-full p-2 bg-transparent  rounded  focus:outline-none">
-            <option className='font-light text-[#333333]'>City</option>
+            <option className='font-light text-[#333333] text-[20px]'>City</option>
             </select>
         </div>
 
@@ -33,7 +33,7 @@ const HeroForm = () => {
     {/* Second Row */}
     <div className="flex justify-between gap-4 mb-4 min-h-[70px]">
       {/* Departure Date */}
-      <div className="flex-1 rounded-[20px] max-w-[300px] bg-[#ffffff84] px-2 flex items-center">
+      <div className="flex-1 rounded-[20px] max-w-[300px] bg-[#ffffff84] px-2 flex items-center text-[20px]">
         
         <input
           type="date"
@@ -43,10 +43,10 @@ const HeroForm = () => {
 
       {/* Class */}
       <div className="flex-1  flex items-center max-w-[300px] bg-[#ffffff84] px-2 rounded-[20px]">
-            <p className=' min-w-[90px]'>Trip Type:</p>
+            <p className=' min-w-[90px] font-[400] text-[20px]'>Trip Type:</p>
         
             <select className=" w-full p-2 bg-transparent  rounded  focus:outline-none ">
-                <option className='font-light'>Regular</option>
+                <option className='font-light text-[20px]'>Regular</option>
             </select>
       </div>
 
@@ -59,10 +59,10 @@ const HeroForm = () => {
       {/* Trip Type */}
 
       <div className="flex-1 flex items-center max-w-[300px] bg-[#ffffff84] px-2 rounded-[20px]">
-      <p>To:</p>
+      <p className='font-[400] text-xl'>To:</p>
         
       <select className="w-full p-2 bg-transparent  rounded  focus:outline-none">
-          <option className='font-light'>One Way</option>
+          <option className='font-light text-xl'>One Way</option>
         </select>
       </div>
 
@@ -83,7 +83,7 @@ const HeroForm = () => {
         <div className="flex-1 flex items-center  bg-[#ffffff84] px-2 rounded-[20px]">
          
         <select className="w-full p-2 bg-transparent  rounded  focus:outline-none">
-            <option className='font-light'>1</option>
+            <option className='font-light text-xl'>1</option>
           </select>
         </div>
       </div>
@@ -95,7 +95,7 @@ const HeroForm = () => {
         <div className="flex-1 flex items-center max-w-[300px] bg-[#ffffff84] px-2 rounded-[20px]">
                                    
         <select className="w-full p-2 bg-transparent  rounded  focus:outline-none">
-            <option className='font-light'>Preferred time</option>
+            <option className='font-light text-xl'>Preferred time</option>
         </select>
       </div>
         {/* Available Agencies */}
@@ -103,13 +103,13 @@ const HeroForm = () => {
       
         
         <select className="w-full p-2 bg-transparent  rounded  focus:outline-none">
-            <option className='font-light'>Available agencies</option>
+            <option className='font-light text-xl'>Available agencies</option>
           </select>
       </div>
       </div>
 
       {/* Button */}
-      <button className="mt-4 w-full py-3 bg-[#007BFF] text-white font-bold rounded-[20px] hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+      <button className="mt-4 w-full py-4 bg-[#007BFF] text-white font-bold rounded-[20px] hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
         Book Your Trip
       </button>
     </div>

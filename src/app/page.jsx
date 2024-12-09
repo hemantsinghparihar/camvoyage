@@ -20,7 +20,7 @@ import HeroForm from "./components/HeroForm";
 
 export default function Home() {
   return (
-    <div className="w-screen ">
+    <div className="w-screen  overflow-x-hidden">
       <div className="  mx-auto  ">
         <section className="flex justify-center ">
             <div className="hero-container w-[100%]   max-h-[955px] flex justify-center "
@@ -46,7 +46,7 @@ export default function Home() {
 
                 <div className="hero-content   w-full flex  justify-center ">
                   <div className="max-w-[625px]  flex flex-col gap-4">
-                    <h4 className="text-[20px] text-center font-semibold  text-white opacity-70">WELCOME ONBOARD</h4>
+                    <h4 className="text-[20px] text-center font-[400]  text-white opacity-70">WELCOME ONBOARD</h4>
                     <h1 className="text-[48px] text-center font-bold text-white leading-[32px] ">What’s Your Destination?</h1>
 
                     {/* the form===========  */}
@@ -86,14 +86,14 @@ export default function Home() {
                           <div className="flex justify-between gap-4 mb-4">
                             {/*  row 1*/}
                             
-                            <div className="flex-1 flex items-center max-w-[300px] bg-white px-2 rounded-[20px]">
-                              <p>From:</p>
+                            <div className="flex-1 flex items-center max-w-[300px] bg-white px-2 rounded-[20px] min-h-[70px]">
+                              <p className="text-[20px] ">From:</p>
                               <select className="w-full p-2 bg-transparent  rounded  focus:outline-none">
                                 <option>Yaounde</option>
                               </select>
                             </div>
 
-                            <div className="flex-1 flex items-center max-w-[300px] bg-white px-2 rounded-[20px]">
+                            <div className="flex-1 flex items-center max-w-[300px] bg-white px-2 rounded-[20px] min-h-[70px]">
                               <p>To:</p>
                               
                             <select className="w-full p-2 bg-transparent  rounded  focus:outline-none">
@@ -106,7 +106,7 @@ export default function Home() {
                       
                       <div className="flex justify-between gap-4 mb-4">
                             {/* Number of Seats */}
-                            <div className="flex-1 flex items-center  bg-white px-2 rounded-[20px]">
+                            <div className="flex-1 flex items-center  bg-white px-2 rounded-[20px]  min-h-[70px]">
                             
                             <input
                               type="date"
@@ -283,7 +283,7 @@ export default function Home() {
                   </div>
 
                   <div className="w-full px-8 text-center  mx-auto ">
-                    <div className=" bg-white rounded-[20px] flex min-h-[60px] px-2
+                    <div className=" bg-white rounded-[20px] flex min-h-[70px] px-2
                      ">
                       <input type="text" placeholder="Enter ticket reference number" className="rounded-[20px]  min-w-[90%] outline-none px-2 "  />
 
@@ -292,7 +292,7 @@ export default function Home() {
                       </div>
                     </div>
 
-                    <button className="rounded-[20px] bg-[#007BFF]  mt-4 w-full py-3  text-white font-bold  hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <button className="rounded-[20px] bg-[#007BFF]  mt-4 w-full py-4  text-white font-bold  hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
                        Proceed                      
                     </button>                
                     
@@ -423,17 +423,17 @@ export default function Home() {
 
 
               <section className="contact px-4">
-                <div className="py-4 ">
+                <div className="py-4  ">
 
-                  <div className="head flex  items-center justify-center gap-4">
+                  <div className="head flex  items-center justify-center gap-4 ">
                     <span className=""><Image src={'/LineL.svg'} width={600} height={2} alt="left line" /></span>
                     <h2 className="text-[40px] ">Contact Us</h2>
                     <span className=""><Image src={'/LineR.svg'} width={600} height={2} alt="right line" /></span>
                   </div>
 
-                  <div className="contact-content max-w-[90%]  px-4 flex  justify-center py-4">
+                  <div className="contact-content max-w-[90%]  px-4 flex  justify-center py-4  ">
                     
-                    <div className="left  flex flex-col items-center gap-2">
+                    <div className="left  flex flex-col items-center gap-2 ">
                       <Image src={'/Logo2.svg'} width={351} height={205} alt="logo" />
 
                       <div className="socials flex justify-center gap-2 py-2 px-2 max-w-[80px] rounded-[10px] bg-[#FCECBC]">
@@ -446,25 +446,25 @@ export default function Home() {
 
                     </div>
                    
-                    <div className="right  flex flex-col gap-4 items-center">
+                    <div className="right  flex flex-col gap-4 items-center pt-4">
                       <div className="min-w-[625px] px-2 flex flex-col gap-4">
                         <div className="row flex w-full gap-2">
                           <div className="First flex-1"> 
                             <h4 className="text-[20px] font-medium text-[#333333]">First name</h4>
-                            <input type="text" className="w-full border border-black px-2 py-2 rounded-[20px]" placeholder="Enter here"/>
+                            <input type="text" className="w-full border border-black px-2 py-2 rounded-[20px] min-h-[70px]" placeholder="Enter here"/>
                           </div>
                           <div className="First flex-1"> 
                             <h4 className="text-[20px] font-medium text-[#333333]">Last name</h4>
-                            <input type="text" className="w-full border border-black px-2 py-2 rounded-[20px]" placeholder="Enter here"/>
+                            <input type="text" className="w-full border border-black px-2 py-2 rounded-[20px] min-h-[70px]" placeholder="Enter here"/>
                           </div>
                           
                         </div>
                         <div className="First flex-1"> 
                             <h4 className="text-[20px] font-medium text-[#333333]">Phone number</h4>
-                            <input type="text" className="w-full border border-black px-2 py-2 rounded-[20px]" placeholder="Enter "/>
+                            <input type="text" className="w-full border border-black px-2 py-2 rounded-[20px] min-h-[70px]" placeholder="Enter "/>
                         </div>
 
-                        <button className="rounded-[20px] bg-[#007BFF]  mt-4 w-full py-3  text-white font-bold  hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <button className="rounded-[20px] bg-[#007BFF]  mt-4 w-full py-4  text-white font-bold  hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">
                             Proceed                      
                         </button> 
                       </div>

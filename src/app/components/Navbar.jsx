@@ -16,19 +16,19 @@ const Navbar = () => {
             <div className="nav-links  py-2 flex items-center">
                 <nav className=' flex items-center justify-between min-w-[745px] max-h-[38px]'>
 
-                    <Link className=' text-white text-[20px] font-semibold' href={'/'}>
+                    <Link className=' text-white text-[20px] font-[900]' href={'/'}>
                         <div >
                             Book Your Trip
                         </div>
                     </Link>
                     
-                    <Link className='  text-white text-[20px] font-semibold' href={'/'}>
+                    <Link className='  text-white text-[20px] font-[900]' href={'/'}>
                         <div >
                             Book Your Trip
                         </div>
                     </Link>
 
-                    <Link className='  text-white text-[20px] font-semibold' href={'/'}>
+                    <Link className='  text-white text-[20px] font-[900]' href={'/'}>
                         <div >
                             Book Your Trip
                         </div>

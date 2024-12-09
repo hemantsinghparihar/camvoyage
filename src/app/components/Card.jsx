@@ -27,12 +27,12 @@ const Card = () => {
                             <span className="font-bold text-[16px]">Douala</span>
                         </div>
 
-                        <div className='flex justify-between'>
-                            <span className="text-[16px] font-bold"></span> 
+                        <div className='flex justify-between  items-center'>
+                            <span className="text-[16px] font-bold"> <Image src={'/location.svg'} width={24}  height={24} alt='location' /></span> 
                             <span className="mx-2">
                             <Image src={'/Line.svg'} width={266} height={2}  alt='line'/>
                             </span> 
-                            <span className="font-bold text-[16px]"></span>
+                            <span className="font-bold text-[16px]"> <Image src={'/location.svg'} width={24}  height={24} alt='location' /></span>
                             
                         </div>
 
