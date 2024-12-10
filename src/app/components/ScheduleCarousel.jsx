@@ -4,15 +4,16 @@ import Slider from "react-slick";
 import Card from "./Card";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import Image from "next/image";
 
 const ScheduleCarousel = () => {
   // Custom arrow components
   const CustomPrevArrow = ({ onClick }) => (
     <button
       onClick={onClick}
-      className="absolute left-1/2 -translate-x-[60px] bottom-[-60px] z-10 bg-white rounded-[10px] p-2 shadow-lg hover:bg-gray-200 h-[50px] w-[67px] "
+      className="absolute left-1/2 -translate-x-[60px] bottom-[-100px] z-10 bg-white rounded-[10px] p-2 shadow-lg hover:bg-gray-200 h-[50px] w-[67px] flex justify-center "
     >
-      <span className="">◀</span>
+      <span className=""> <Image src={'/leftArrow.svg'} width={30} height={30} alt="left" /></span>
       
     </button>
   );
@@ -20,9 +21,9 @@ const ScheduleCarousel = () => {
   const CustomNextArrow = ({ onClick }) => (
     <button
       onClick={onClick}
-      className="absolute left-1/2 translate-x-[60px] bottom-[-60px] z-10 bg-white p-2 shadow-lg hover:bg-gray-200 h-[50px] w-[67px] rounded-[10px] "
+      className="absolute left-1/2 translate-x-[60px] bottom-[-100px] z-10 bg-white p-2 shadow-lg hover:bg-gray-200 h-[50px] w-[67px] rounded-[10px] flex justify-center"
     >
-      <span>▶</span>
+      <span> <Image src={'/rightArrow.svg'} width={30} height={30} alt="left" /></span>
       
     </button>
   );
@@ -37,6 +38,7 @@ const ScheduleCarousel = () => {
     arrows: true, // Show next/prev arrows
     prevArrow: <CustomPrevArrow />,
     nextArrow: <CustomNextArrow />,
+    
     responsive: [
       {
         breakpoint: 1024, // Adjust for tablet screens
@@ -57,7 +59,7 @@ const ScheduleCarousel = () => {
 
   return (
     <div className="max-w-[1400px] mx-auto px-4 pt-10 pb-12 relative ">
-      <Slider {...settings} className="">
+      <Slider {...settings} className=" ">
         <Card />
         <Card />
         <Card />

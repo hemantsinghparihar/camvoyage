@@ -8,7 +8,7 @@ const SelectContainers = () => {
   const options = ["All", "Regular", "V.I.P", "V.V.I.P"];
 
   return (
-    <div className="select-card-container flex max-w-[692px] gap-6 justify-between px-2 mx-auto rounded-[10px] min-h-[71px]">
+    <div className="select-card-container flex max-w-[692px] gap-[30px] justify-between px-2 mx-auto rounded-[10px] min-h-[71px]">
       {options.map((option) => (
         <div
           key={option}
